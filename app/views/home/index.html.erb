@@ -20,14 +20,20 @@
   </ul>
 </div>
 
+
+
+<div id="carrousel">
 <div class="container">
   <div class="row">
+     <ul>
     <% @tasks.each do |task|  %>
       <div class="card col-3">
         <% unless task.image.nil? %>
-          <%= image_tag task.image, class: "rounded-circle" %>
+   <li>        <%= image_tag task.image, class: "rounded-circle" %> </li>
         <% end %>
       </div>
     <% end %>
+  </ul>
   </div>
 </div>
+
