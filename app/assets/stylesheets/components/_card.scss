@@ -1,0 +1,25 @@
+.card{
+    padding-top: 15px;
+    padding-bottom: 20px;
+    border: none;
+}
+
+.card > ul {
+    list-style: none;
+    font-weight: 400;
+    line-height: 2.0;
+}
+
+#tab > li {
+    list-style: none;
+    font-weight: 600;
+    line-height: 2.0;
+    transition: 0.2s;
+}
+
+#tab > li:hover {
+    color: #28a745;
+    margin-left: 3px;
+    cursor: pointer
+    
+}
