@@ -100,6 +100,16 @@ function slideImg(){
 
 slideImg(); // enfin, on lance la fonction une première fois
 
+$(".open").click(function () {
+    $(".overlay, #modal").addClass("active");
+    $('#tabs > li').next().hide();
+    $('#tabs > li:last').next().show();
+  });
+
+  $(".close, .overlay").click(function () {
+    $(".overlay, #modal").removeClass("active");
+  });
+
 });
 
 

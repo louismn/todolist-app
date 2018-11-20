@@ -7,15 +7,15 @@
     <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
 
       <% unless user_signed_in? %>
-      <li class="nav-item">
-        <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
+      <li class="nav-item open">
+        <a class="open"> Sign in</a>
       </li>
       <li class="nav-item">
-        <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+         <a class="open"> Sign up</a>
       </li>
       <% else %>
       <li class="nav-item">
-        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+       <a class="open"> Sign out</a>
       </li>
       <% end %>
       <li class="nav-item">
@@ -28,14 +28,15 @@
       <ul id="dropdown-content">         
       <% unless user_signed_in? %>
       <li class="nav-item">
-        <%= link_to "Log in", new_user_session_path, class: "nav-link" %>
+       
+        <a class="open nav-link"> Sign in</a>
       </li>
       <li class="nav-item">
-        <%= link_to "Sign up", new_user_registration_path, class: "nav-link" %>
+         <a class="open nav-link"> Sign up</a>
       </li>
       <% else %>
       <li class="nav-item">
-        <%= link_to "Log out", destroy_user_session_path, method: :delete, class: "nav-link" %>
+        <a class="open nav-link"> Sign out</a>
       </li>
     </ul>
       <% end %>
