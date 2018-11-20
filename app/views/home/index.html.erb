@@ -21,11 +21,11 @@
 </div>
 
 
-
+<div class="container mt-5 text-center">
 <div id="carrousel">
-<div class="container">
-  <div class="row">
-     <ul>
+
+  
+  <ul>
     <% @tasks.each do |task|  %>
       
         <% unless task.image.nil? %>
@@ -34,13 +34,14 @@
       
     <% end %>
   </ul>
-  </div>
+  
+</div>
 </div>
 
 <div class="overlay"></div>
 <div id="modal">
   <ul id="tabs">
-    <li>Login</li>
+    <li></li>
 
     <div>
       <h2>Login</h2>
@@ -65,7 +66,7 @@
         </div>
       </form>
     </div>
-    <li>Signup</li>
+    <li></li>
     <div>
       <h2>Signup</h2>
       <form class="new_user" id="new_user" action="/users" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓"><input type="hidden" name="authenticity_token" value="gFhlQ8aSVseh9Emx+FFxYp/psJ+uQ76Y4zVJCIrcG8ItURh7Ciqhrws3kqmPNGCvzOH8akslCDXQTQ6hpha9jw==">
@@ -89,7 +90,7 @@
         </div>
 
         <div class="actions">
-          <input type="submit" name="commit" value="Sign up" data-disable-with="Sign up">
+          <input type="submit" name="commit" style="margin-top: 15px; border-radius: 2px;"  value="Sign up" data-disable-with="Sign up">
         </div>
       </form>
     </div>

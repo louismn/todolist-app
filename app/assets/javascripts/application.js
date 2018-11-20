@@ -46,7 +46,7 @@ var $carrousel = $('#carrousel'), // on cible le bloc du carrousel
 $img.css('display', 'none'); // on cache les images
 $currentImg.css('display', 'block'); // on affiche seulement l'image courante
 
-$carrousel.append('<div class="controls"> <span class="prev">Precedent</span> <span class="next">Suivant</span> </div>');
+$carrousel.append('<div class="controls"> <span class="prev">< </span> <span class="next">> </span> </div>');
 
 $('.next').click(function(){ // image suivante
 
@@ -95,7 +95,7 @@ function slideImg(){
 
   slideImg(); // on oublie pas de relancer la fonction à la fin
 
-    }, 4000); // on définit l'intervalle à 7000 millisecondes (7s)
+    }, 5000); // on définit l'intervalle à 5000 millisecondes (5s)
 }
 
 slideImg(); // enfin, on lance la fonction une première fois
