@@ -27,11 +27,11 @@
   <div class="row">
      <ul>
     <% @tasks.each do |task|  %>
-      <div class="card col-3">
+      
         <% unless task.image.nil? %>
    <li>        <%= image_tag task.image, class: "rounded-circle" %> </li>
         <% end %>
-      </div>
+      
     <% end %>
   </ul>
   </div>
