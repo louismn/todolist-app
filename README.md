@@ -1,6 +1,6 @@
 
 
-Lien vers le site : https://jquery-great-app.herokuapp.com/
+Lien vers le site : https://tdapp-thp.herokuapp.com/
 
 pour lancer ce magnifique projet en local :
 
